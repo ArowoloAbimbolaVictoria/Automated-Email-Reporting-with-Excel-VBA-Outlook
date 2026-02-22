@@ -4,6 +4,7 @@
 **Domain:** Business Process Automation · Reporting · Data Aggregation  
 **Type:** End-to-End Automation Project
 
+![Dashboard Cover](assets/coverr.jpg)
 
 ##  The Problem
 
@@ -48,8 +49,11 @@ This project automates the full reporting pipeline using **Excel VBA integrated 
 - **Saves the report** to a dynamically created folder (organized by month)
 - **Sends the report via Outlook** to a configurable recipient list (TO / CC / BCC)
 
+  ![Raw Data](assets/raw_data.jpg)
+
 
 ##  How It Works - VBA Walkthrough
+![VBA Code](assets/vba.jpg)
 
 ### Step 1 - Extract & Aggregate the Data
 
@@ -76,6 +80,7 @@ Sheets(Array("Cover", "Interval Data", "rawData")).Copy
 ```
 
 Only the relevant sheets are copied into a new workbook. The recipient gets a **clean, professional file** — no macros, no internal formulas, no extra sheets.
+![Control Sheet](assets/control.jpg)
 
 
 ### Step 3 - Save to the Right Folder Automatically
@@ -134,6 +139,7 @@ olMail.Display    ' Switch to .Send for fully automated delivery
 ```
 
 The macro connects to the user's default Outlook mailbox, builds the email, attaches the report, and either previews it (`.Display`) or sends it immediately (`.Send`).
+![Email Sheet](assets/emaill.jpg)
 
 
 ##  Workbook Structure
@@ -146,6 +152,7 @@ The macro connects to the user's default Outlook mailbox, builds the email, atta
 | `Email` | Distribution list — TO, CC, BCC (editable by anyone) |
 | `Control` | File path and report naming configuration |
 
+![Dashboard](assets/dashbord.jpg)
 
 ## Skills Demonstrated
 
